@@ -272,7 +272,7 @@ plt.ylabel('Gross Revenue ($)')
 plt.show()
 ```
 
-![Budget vs. Gross Revenue scatter plot](images/budget_vs_gross_scatter.png)
+![Budget vs. Gross Revenue scatter plot](budget_vs_gross_scatter.png)
 
 ```python
 sns.regplot(
@@ -286,7 +286,7 @@ plt.ylabel('Gross Revenue ($)')
 plt.show()
 ```
 
-![Budget vs. Gross Revenue with trend line](images/budget_vs_gross_trendline.png)
+![Budget vs. Gross Revenue with trend line](budget_vs_gross_trendline.png)
 
 ### 4.2 Correlation Matrix
 
@@ -316,7 +316,7 @@ plt.ylabel('Movie Features')
 plt.show()
 ```
 
-![Correlation heatmap](images/correlation_heatmap.png)
+![Correlation heatmap](correlation_heatmap.png)
 
 ---
 
@@ -476,16 +476,6 @@ genre_by_company.loc[genre_by_company.groupby('company')['movie_count'].idxmax()
 **Possible next steps:** adjust budget/revenue for inflation across decades, segment the correlation analysis by genre, or model revenue as a function of budget, votes, and genre using regression.
 
 ---
-
-## How to Run
-
-1. Clone this repository.
-2. Download the dataset from [Kaggle: Movie Industry](https://www.kaggle.com/datasets/danielgrijalvas/movies) and place `movies.csv` in the path referenced in the notebook (or update the path in the notebook's data-loading cell).
-3. Install the required packages:
-   ```bash
-   pip install pandas seaborn matplotlib
-   ```
-4. Open `movies-correlation-and-key-metrics.ipynb` in Jupyter Notebook / JupyterLab and run all cells.
 
 ---
 
